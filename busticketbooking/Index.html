@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+.myLink {display: none}
+</style>
+<body>
+
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">TICKET BOOKING</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+      
+    
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-hide-small" style="max-width:1500px">
+    <img class="w3-image" src="https://image.shutterstock.com/image-photo/beautiful-abstract-grunge-decorative-navy-260nw-539880832.jpg" alt="London" width="100%" height="500px">
+    <div class="w3-display-middle" style="width:65%">
+      <div class="w3-bar w3-black">
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Bus');"><i class="fa fa-bus w3-margin-right"></i>Bus</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Hotel');"><i class="fa fa-bed w3-margin-right"></i>Hotel</button>
+        <button class="w3-bar-item w3-button tablink" onclick="openLink(event, 'Car');"><i class="fa fa-car w3-margin-right"></i>Rental</button>
+      </div>
+  
+      <!-- Tabs -->
+      <div id="Bus" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Travel the world with us</h3>
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half">
+            <label>From</label>
+            <input class="w3-input w3-border" type="text" placeholder="Departing from">
+          </div>
+          <div class="w3-half">
+            <label>To</label>
+            <input class="w3-input w3-border" type="text" placeholder="Arriving at">
+          </div>
+        </div>
+        <p><button class="w3-button w3-dark-grey"><a href="https://www.redbus.in/bus-tickets">Search and find dates</a></button></p>
+      </div>
+  
+      <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Find the best hotels</h3>
+        <p>Book a hotel with us and get the best fares and promotions.</p>
+        <p>We know hotels - we know comfort.</p>
+        <p><button class="w3-button w3-dark-grey"><a href="https://www.booking.com/city/in/chennai.en-gb.html?aid=318615;label=English_India_EN_IN_28562200465-4_ixAuZXEVYb2_Cow*oNVgS108282353905:pl:ta:p1:p2:ac:ap:nes:fi:tidsa-209720234665:lp1007809:li:dec:dm;ws=&gclid=Cj0KCQjwgJv4BRCrARIsAB17JI5vek7OnlRakBwvrbdSpPPduNe0EP3js8PTihxyo8rerw7LYJ450jgaApnuEALw_wcB">Search Hotels</a></button></p>
+      </div>
+  
+      <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
+        <h3>Best car rental in the world!</h3>
+        <p><span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer if you book today: 25% off anywhere in the world with CarServiceRentalRUs</p>
+        <input class="w3-input w3-border" type="text" placeholder="Pick-up point">
+        <p><button class="w3-button w3-dark-grey"><a href="https://www.uber.com/global/en/cities/chennai/">Search Availability</a></button></p>
+      </div>
+    </div>
+  </header>
+  
+  
+    
+  <!-- End page content -->
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
+    <h5>Find Us On</h5>
+    <div class="w3-xlarge w3-padding-16">
+      <a href="https://www.facebook.com/profile.php?id=100014138165639"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+     <a href="http://www.instagram.com/itz_me_saadkhan/"><i class="fa fa-instagram w3-hover-opacity"></i></a> 
+      <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+      
+      <a href="https://twitter.com/LOGIN"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    
+    </div>
+   
+  </footer>
+  
+  <script>
+  // Tabs
+  function openLink(evt, linkName) {
+    var i, x, tablinks;
+    x = document.getElementsByClassName("myLink");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < x.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+    }
+    document.getElementById(linkName).style.display = "block";
+    evt.currentTarget.className += " w3-red";
+  }
+  
+  // Click on the first tablink on load
+  document.getElementsByClassName("tablink")[0].click();
+  </script>
+ 
+
+</body>
+</html>
